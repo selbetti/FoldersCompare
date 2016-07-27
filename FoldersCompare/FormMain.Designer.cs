@@ -50,6 +50,8 @@
             this.txtPathEsquerda = new System.Windows.Forms.TextBox();
             this.btnEsquerda = new System.Windows.Forms.Button();
             this.btnDireita = new System.Windows.Forms.Button();
+            this.btnAbrirLocalizacaoEsquerda = new System.Windows.Forms.Button();
+            this.btnAbrirLocalizacaoDireita = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -106,6 +108,8 @@
             // panel1
             // 
             this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.btnAbrirLocalizacaoDireita);
+            this.panel1.Controls.Add(this.btnAbrirLocalizacaoEsquerda);
             this.panel1.Controls.Add(this.btnListarPelaDireita);
             this.panel1.Controls.Add(this.btnListarPelaEsquerda);
             this.panel1.Controls.Add(this.pnDireita);
@@ -124,9 +128,9 @@
             // 
             // btnListarPelaDireita
             // 
-            this.btnListarPelaDireita.Location = new System.Drawing.Point(837, 24);
+            this.btnListarPelaDireita.Location = new System.Drawing.Point(834, 24);
             this.btnListarPelaDireita.Name = "btnListarPelaDireita";
-            this.btnListarPelaDireita.Size = new System.Drawing.Size(107, 23);
+            this.btnListarPelaDireita.Size = new System.Drawing.Size(110, 23);
             this.btnListarPelaDireita.TabIndex = 35;
             this.btnListarPelaDireita.Text = "Exportar arquivos";
             this.btnListarPelaDireita.UseVisualStyleBackColor = true;
@@ -282,6 +286,26 @@
             this.btnDireita.UseVisualStyleBackColor = true;
             this.btnDireita.Click += new System.EventHandler(this.btnDireita_Click);
             // 
+            // btnAbrirLocalizacaoEsquerda
+            // 
+            this.btnAbrirLocalizacaoEsquerda.Location = new System.Drawing.Point(431, 1);
+            this.btnAbrirLocalizacaoEsquerda.Name = "btnAbrirLocalizacaoEsquerda";
+            this.btnAbrirLocalizacaoEsquerda.Size = new System.Drawing.Size(110, 23);
+            this.btnAbrirLocalizacaoEsquerda.TabIndex = 36;
+            this.btnAbrirLocalizacaoEsquerda.Text = "Abrir localização";
+            this.btnAbrirLocalizacaoEsquerda.UseVisualStyleBackColor = true;
+            this.btnAbrirLocalizacaoEsquerda.Click += new System.EventHandler(this.btnAbrirLocalizacaoEsquerda_Click);
+            // 
+            // btnAbrirLocalizacaoDireita
+            // 
+            this.btnAbrirLocalizacaoDireita.Location = new System.Drawing.Point(834, 1);
+            this.btnAbrirLocalizacaoDireita.Name = "btnAbrirLocalizacaoDireita";
+            this.btnAbrirLocalizacaoDireita.Size = new System.Drawing.Size(110, 23);
+            this.btnAbrirLocalizacaoDireita.TabIndex = 37;
+            this.btnAbrirLocalizacaoDireita.Text = "Abrir localização";
+            this.btnAbrirLocalizacaoDireita.UseVisualStyleBackColor = true;
+            this.btnAbrirLocalizacaoDireita.Click += new System.EventHandler(this.btnAbrirLocalizacaoDireita_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,6 +357,8 @@
         private System.Windows.Forms.Panel pnDireita;
         private System.Windows.Forms.Button btnListarPelaDireita;
         private System.Windows.Forms.Button btnListarPelaEsquerda;
+        private System.Windows.Forms.Button btnAbrirLocalizacaoDireita;
+        private System.Windows.Forms.Button btnAbrirLocalizacaoEsquerda;
     }
 }
 
